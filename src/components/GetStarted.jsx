@@ -3,21 +3,21 @@ import phoneImg from "@/assets/phone.png";
 const steps = [
   {
     number: "1",
-    title: "Create Your Account",
+    title: "Пополняете баланс и покупаете токены",
     description:
-      "Started with create the account on the Celchains app that navigate your digital assets and invest them",
+      "Вы переводите деньги со своей банковской карты на личный счёт в системе. Взамен вы получаете токены, номинированные в «цифровом золоте».",
   },
   {
     number: "2",
-    title: "Create Your First Wallet",
+    title: "Продавайте другим или ждите выкупа",
     description:
-      "By create wallet, you are able to take action consist of buying, trading, and investing",
+      "Вы можете продать токены участникам платформы или раз в месяц — самой платформе по курсу, привязанному к золоту.",
   },
   {
     number: "3",
-    title: "Buy And Sell Any Asset",
+    title: "Продавайте токены — участнику или платформе",
     description:
-      "Any asset that you chosen on the market such as Crypto.com, Solana, Ethereum, Energy Web, and etc",
+      "Получите деньги сразу или доход до 10% от роста золота раз в месяц.",
   },
 ];
 
@@ -27,13 +27,11 @@ const GetStarted = () => {
       {/* Header */}
       <div className="text-start mb-12">
         <h2 className="text-3xl md:text-6xl  mb-4">
-          Get started with Web3 wallet in 3 easy steps
+          Инвестируй как профессионал — просто, быстро, надёжно{" "}
         </h2>
         <p className="text-2xl text-start max-w-7xl">
-          As the cryptocurrency ecosystem continues to evolve, it’s essential
-          for users to stay informed, exercise caution, and adopt best practices
-          for managing and securing their digital assets in this exciting and
-          dynamic financial frontier
+          Купите токены, торгуйте с другими участниками или продайте их нам — и
+          зарабатывайте на росте золота
         </p>
       </div>
 

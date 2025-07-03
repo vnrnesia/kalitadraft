@@ -44,12 +44,11 @@ const Platform = () => {
     <div className="max-w-7xl mx-auto px-4 py-16">
       <div className="text-start mb-12">
         <h2 className="text-3xl md:text-6xl  mb-4">
-          One Platform, Millions Of Assets
+          Следите за курсом и считайте доход за секунды{" "}
         </h2>
         <p className="text-2xl text-start max-w-6xl">
-          As a leading self-custody multi-chain platform, we support millions of
-          assets across 100+ blockchains. From Bitcoin, Ethereum, and Solana,
-          Energy Web, Optimism, and much more
+          Онлайн-график золота и токена в реальном времени. Укажите количество
+          токенов и узнайте, сколько вы можете заработать уже сегодня.
         </p>
       </div>
 
@@ -68,7 +67,11 @@ const Platform = () => {
             {chains.map((chain, index) => (
               <tr key={index} className=" hover:bg-gray-50">
                 <td className="flex items-center gap-5 p-6">
-                  <img src={chain.icon} alt={chain.name} className="w-14 h-14" />
+                  <img
+                    src={chain.icon}
+                    alt={chain.name}
+                    className="w-14 h-14"
+                  />
                   <span className="text-xl">{chain.name}</span>
                 </td>
                 {[chain.span, chain.sell, chain.buy, chain.earn].map(

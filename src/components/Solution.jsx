@@ -5,28 +5,28 @@ import img4 from "@/assets/SolutionImg/img4.jpg";
 
 const testimonials = [
   {
-    name: "Sarah",
+    name: "Сара",
     image: img1,
     message:
-      "The user-friendly interface and top-notch security features make managing my crypto a breeze. Finally, a wallet that keeps up with the fast-paced world of blockchain.",
+      "Удобный интерфейс и первоклассные функции безопасности делают управление моей криптовалютой очень простым. Наконец-то кошелёк, который соответствует стремительному миру блокчейна.",
   },
   {
-    name: "Frank",
+    name: "Фрэнк",
     image: img2,
     message:
-      "This wallet not only provides a seamless NFT browsing experience but also makes transactions swift and secure. Highly recommended for fellow collectors!",
+      "Этот кошелёк не только обеспечивает удобный просмотр NFT, но и делает транзакции быстрыми и безопасными. Настоятельно рекомендую другим коллекционерам!",
   },
   {
-    name: "Fury",
+    name: "Фьюри",
     image: img3,
     message:
-      "I’m not a tech expert, but using this Web3 wallet is surprisingly simple. Sending and receiving crypto has never been this easy and stress-free.",
+      "Я не эксперт в технологиях, но пользоваться этим Web3-кошельком оказалось удивительно просто. Отправка и получение криптовалюты ещё никогда не были такими лёгкими и без стресса.",
   },
   {
-    name: "Alita",
+    name: "Алита",
     image: img4,
     message:
-      "Security is my top priority, and this Web3 wallet delivers on that front. Finally, a wallet that aligns with my security standards.",
+      "Безопасность — мой главный приоритет, и этот Web3-кошелёк полностью оправдывает мои ожидания. Наконец-то кошелёк, соответствующий моим стандартам безопасности.",
   },
 ];
 
@@ -38,16 +38,16 @@ const Solution = () => {
         <div className="flex flex-col md:flex-row justify-between items-start mb-12">
           <div className="max-w-4xl">
             <h2 className="text-3xl md:text-5xl mb-4 leading-[5]">
-              Solution For Buying, Trading, And Investing In Digital Assets
+              Решение для покупки, торговли и инвестиций в цифровые активы
             </h2>
             <p className="text-2xl">
-              Join our massive community to learn about the power of
-              blockchains, crypto, and Web3
+              Присоединяйтесь к нашему огромному сообществу, чтобы узнать о
+              возможностях блокчейна, криптовалют и Web3
             </p>
           </div>
           <div className="self-start">
             <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">
-              Join our community on Discord
+              Присоединяйтесь к нашему сообществу в Discord
             </button>
           </div>
         </div>
