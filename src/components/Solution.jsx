@@ -33,7 +33,7 @@ const testimonials = [
 const Solution = () => {
   return (
     <section className="bg-gradient-to-br from-[#1a0003] via-[#5e020b] to-[#ad0e21] text-white py-24 px-4">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-12">
           <div className="max-w-4xl">
