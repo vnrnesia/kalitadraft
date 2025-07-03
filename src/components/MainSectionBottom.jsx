@@ -2,8 +2,8 @@ import { Star } from "lucide-react";
 
 const MainSectionBottom = () => {
   return (
-    <section className="bg-gray-100  py-16">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <section className="bg-gray-100 py-16 ">
+      <div className="max-w-7xl mx-auto  grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         {/* 1. Kutu */}
         <div>
           <p className="text-black text-2xl mb-3">Trusted by</p>

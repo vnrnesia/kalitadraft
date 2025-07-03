@@ -32,21 +32,24 @@ const testimonials = [
 
 const Solution = () => {
   return (
-    <section className="bg-gradient-to-tr from-[#780014] via-[#8b0018] to-[#50000e] text-white py-16 px-4">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-gradient-to-br from-[#1a0003] via-[#5e020b] to-[#ad0e21] text-white py-24 px-4">
+      <div className="max-w-3xl mx-auto">
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-12">
-          <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">
+        <div className="flex flex-col md:flex-row justify-between items-start mb-12">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl md:text-5xl mb-4 leading-[5]">
               Solution For Buying, Trading, And Investing In Digital Assets
             </h2>
-            <p className="text-gray-200 text-sm md:text-base">
-              Join our massive community to learn about the power of blockchains, crypto, and Web3
+            <p className="text-2xl">
+              Join our massive community to learn about the power of
+              blockchains, crypto, and Web3
             </p>
           </div>
-          <button className="mt-6 md:mt-0 bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">
-            Join our community on Discord
-          </button>
+          <div className="self-start">
+            <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">
+              Join our community on Discord
+            </button>
+          </div>
         </div>
 
         {/* Testimonials */}
@@ -54,10 +57,14 @@ const Solution = () => {
           {testimonials.map((t, i) => (
             <div key={i}>
               <div className="rounded-xl overflow-hidden mb-3">
-                <img src={t.image} alt={t.name} className="w-full h-60 object-cover" />
+                <img
+                  src={t.image}
+                  alt={t.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="font-semibold mb-1">{t.name}</h3>
-              <p className="text-sm text-gray-200 leading-relaxed">“{t.message}”</p>
+              <p className="text-lg leading-relaxed">“{t.message}”</p>
             </div>
           ))}
         </div>
