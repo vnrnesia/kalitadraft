@@ -10,8 +10,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-sm">
-        <div className="max-w-6xl mx-auto px-8 py-6 flex items-center justify-between">
+      <header className="fixed h-[100px] top-0 left-0 w-full z-50 bg-white shadow-md">
+        <div className="max-w-6xl mx-auto px-8 py-3 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <img src={logo} alt="Celchains Logo" className="h-[75px] w-auto" />

@@ -4,10 +4,10 @@ import WalletImage from "@/assets/homeimage.png";
 const MainSection = () => {
   return (
     <section className="w-full bg-white pt-12 md:pt-14 pb-12">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+      <div className="max-w-7xl mx-auto md:px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-3">
         {/* Sol Metin Kısmı */}
         <div className="text-center md:text-left max-w-xl">
-          <h1 className="text-4xl md:text-7xl text-black leading-tight">
+          <h1 className="text-3xl md:text-7xl text-black leading-tight">
             Инвестируй в{" "}
             <span className="inline-block px-4 py-1 border border-rose-500 rounded-full">
               цифровое
@@ -18,7 +18,7 @@ const MainSection = () => {
             </span>
           </h1>
 
-          <p className="text-xl text-black mt-6">
+          <p className=" md:text-lg text-black mt-6">
             Покупай токены, торгуй с другими участниками или <br /> получай
             прибыль по цене золота
           </p>
