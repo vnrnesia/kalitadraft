@@ -43,14 +43,14 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-4">
             <a
               href="#"
-              className="flex items-center space-x-2 border border-black text-black px-6 py-3 rounded-full text-sm hover:bg-black hover:text-white transition"
+              className="flex items-center space-x-2 border border-black text-black px-6 py-3 rounded-full text-sm hover:bg-[#ad0e21] hover:text-white transition"
             >
               <LogIn size={16} />
               <span>Войти</span>
             </a>
             <a
               href="#"
-              className="flex items-center space-x-2 border border-black text-black px-6 py-3 rounded-full text-sm hover:bg-black hover:text-white transition"
+              className="flex items-center space-x-2 border border-black text-black px-6 py-3 rounded-full text-sm hover:bg-[#ad0e21] hover:text-white transition"
             >
               <UserPlus size={16} />
               <span>Зарегистрироваться</span>

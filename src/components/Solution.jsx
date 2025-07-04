@@ -46,7 +46,7 @@ const Solution = () => {
             </p>
           </div>
           <div className="self-start mt-6">
-            <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">
+            <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-300 transition">
               Присоединяйтесь к нашему сообществу в Discord
             </button>
           </div>

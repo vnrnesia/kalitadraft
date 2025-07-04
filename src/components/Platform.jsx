@@ -41,6 +41,29 @@ const chains = [
   },
 ];
 
+// Reusable styled Select with custom dropdown arrow
+const CustomSelect = ({ children, className }) => (
+  <div className="relative w-full">
+    <select
+      className={`w-full p-3 border rounded-xl appearance-none pr-10 bg-white
+                  focus:outline-none focus:ring-2 focus:ring-rose-600
+                  transition duration-300 ease-in-out
+                  ${className || ""}`}
+    >
+      {children}
+    </select>
+    <svg
+      className="pointer-events-none absolute top-1/2 right-3 -translate-y-1/2 w-5 h-5 text-gray-500 transition-transform duration-300 ease-in-out group-focus-within:rotate-180"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+    </svg>
+  </div>
+);
+
 const Platform = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
@@ -64,20 +87,24 @@ const Platform = () => {
         </div>
 
         {/* Sağ: Calculator */}
-        <div className="w-full md:w-1/3 h-[550px]  pt-7 flex justify-center items-center">
+        <div className="w-full md:w-1/3 h-[550px] pt-7 flex justify-center items-center">
           <div className="bg-white p-8 rounded-xl shadow-md w-full h-full flex flex-col justify-between">
             <h2 className="text-center text-lg font-medium mb-6">
               Купить сейчас!
             </h2>
 
             <div className="flex gap-2 mb-4">
-              <select className="w-1/2 p-3 border rounded-xl">
-                <option>Купить</option>
-                <option>Продать</option>
-              </select>
-              <select className="w-1/2 p-3 border rounded-xl">
-                <option>Золото</option>
-              </select>
+              <div className="w-1/2">
+                <CustomSelect>
+                  <option>Купить</option>
+                  <option>Продать</option>
+                </CustomSelect>
+              </div>
+              <div className="w-1/2">
+                <CustomSelect>
+                  <option>Золото</option>
+                </CustomSelect>
+              </div>
             </div>
 
             <div className="text-right text-xs text-gray-400 mb-2">
@@ -90,22 +117,24 @@ const Platform = () => {
                 placeholder="Amount"
                 className="w-2/3 p-3 border rounded-xl"
               />
-              <select className="w-1/3 p-3 border rounded-xl">
-                <option>USD</option>
-                <option>EUR</option>
-              </select>
+              <div className="w-1/3">
+                <CustomSelect>
+                  <option>USD</option>
+                  <option>EUR</option>
+                </CustomSelect>
+              </div>
             </div>
 
             <div className="mb-6">
-              <select className="w-full p-3 border rounded-xl">
+              <CustomSelect>
                 <option>All payment methods</option>
                 <option>Bank Transfer</option>
                 <option>PayPal</option>
-              </select>
+              </CustomSelect>
             </div>
 
-            <button className="w-full bg-[#ad0e21] text-white font-medium py-3 rounded-xl transition">
-              поиск предложений{" "}
+            <button className="w-full bg-[#ad0e21] text-white font-medium py-3 rounded-xl transition hover:bg-rose-700">
+              поиск предложений
             </button>
           </div>
         </div>

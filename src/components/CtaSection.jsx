@@ -19,7 +19,7 @@ const CtaSection = () => {
             золотом.Прозрачность, <br /> быстрые операции и поддержка 24/7 для
             вашего комфорта.
           </p>
-          <button className="bg-white mt-4 text-black px-6 py-2 rounded-full font-medium hover:bg-gray-100 transition block mx-auto sm:mx-0 sm:inline-block sm:self-start">
+          <button className="bg-white mt-4 text-black px-6 py-2 rounded-full font-medium hover:bg-gray-300 transition block mx-auto sm:mx-0 sm:inline-block sm:self-start">
             Начать инвестировать
           </button>
         </div>

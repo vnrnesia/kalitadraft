@@ -25,10 +25,10 @@ const MainSection = () => {
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="bg-black text-white md:px-10 py-3 rounded-full hover:bg-rose-600 transition">
+            <button className="bg-black text-white md:px-10 py-3 rounded-full hover:bg-[#ad0e21] transition">
               🔐 Зарегистрироваться{" "}
             </button>
-            <button className="bg-black text-white md:px-10 py-3 rounded-full hover:bg-gray-800 transition">
+            <button className="bg-black text-white md:px-10 py-3 rounded-full hover:bg-[#ad0e21] transition">
               📖 Как это работает?{" "}
             </button>
           </div>

@@ -13,7 +13,7 @@ const CtaCard = () => {
           ПК, чтобы начать.
         </p>
         <div className="flex gap-4">
-          <button className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition">
+          <button className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-300 transition">
             Попробовать сегодня
           </button>
           <button className="bg-gray-900 text-white px-6 py-3 rounded-full font-medium hover:bg-gray-800 transition">
