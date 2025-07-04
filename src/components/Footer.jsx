@@ -16,12 +16,17 @@ const Footer = () => {
         {/* Логотип слева */}
         <div className="flex flex-col items-start">
           <div className="flex items-center space-x-2">
-            <img src={Logo} alt="Логотип Celchains" className="h-[100px] w-auto" />
+            <img
+              src={Logo}
+              alt="Логотип Celchains"
+              className="h-[100px] w-auto"
+            />
           </div>
         </div>
 
         {/* Центр - Страницы (две колонки) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Центр - Страницы (две колонки) */}
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
           <div>
             <h4 className="text-lg font-semibold mb-4">Страницы</h4>
             <ul className="space-y-2 text-lg text-gray-700">
@@ -58,7 +63,9 @@ const Footer = () => {
 
       {/* Нижняя часть - Соцсети */}
       <div className="max-w-7xl mx-auto mt-10 px-4">
-        <h4 className="text-lg font-semibold mb-4 justify-center flex">Мы в соцсетях</h4>
+        <h4 className="text-lg font-semibold mb-4 justify-center flex">
+          Мы в соцсетях
+        </h4>
         <div className="flex space-x-4 text-xl justify-center ">
           <FaFacebookF className="hover:text-rose-500 cursor-pointer" />
           <FaTwitter className="hover:text-rose-500 cursor-pointer" />

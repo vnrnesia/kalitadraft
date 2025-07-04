@@ -3,7 +3,7 @@ import WalletImage from "@/assets/homeimage.png";
 
 const MainSection = () => {
   return (
-    <section className="w-full bg-white pt-12 md:pt-6 pb-12">
+    <section className="w-full bg-white pt-12 md:pt-14 pb-12">
       <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Sol Metin Kısmı */}
         <div className="text-center md:text-left max-w-xl">

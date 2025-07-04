@@ -23,7 +23,7 @@ const steps = [
 
 const GetStarted = () => {
   return (
-    <section className="max-w-7xl mx-auto p py-16">
+    <section className=" max-w-md md:max-w-7xl mx-auto p py-16">
       {/* Header */}
       <div className="text-start mb-12">
         <h2 className="text-3xl md:text-6xl  mb-4">
@@ -36,7 +36,7 @@ const GetStarted = () => {
       </div>
 
       {/* Steps + Image */}
-      <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows gap-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2  md:grid-rows gap-10 items-center">
         {/* Steps */}
         <div className="space-y-14">
           {steps.map((step, i) => (
@@ -61,7 +61,7 @@ const GetStarted = () => {
 
         {/* Phone Image */}
         <div className="flex justify-center md:justify-end">
-          <div className="relative w-full max-w-xs md:max-w-sm lg:max-w-md h-[550px] bg-white rounded-2xl shadow-lg py-16 px-16 overflow-hidden">
+          <div className="relative w-full max-w-md md:max-w-sm lg:max-w-md  h-[370px] md:h-[550px] md:max-h-[550px] bg-white rounded-2xl shadow-lg py-16 px-16 overflow-hidden">
             <img
               src={phoneImg}
               alt="Web3 Wallet"

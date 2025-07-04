@@ -19,13 +19,22 @@ const Header = () => {
 
           {/* Desktop Navigation - gizle mobilde */}
           <nav className="hidden md:flex items-center space-x-10 pl-52 text-md">
-            <a href="#" className="text-black font-medium hover:text-rose-500 transition">
+            <a
+              href="#"
+              className="text-black font-medium hover:text-rose-500 transition"
+            >
               Главная
             </a>
-            <a href="#" className="text-black font-medium hover:text-rose-500 transition">
+            <a
+              href="#"
+              className="text-black font-medium hover:text-rose-500 transition"
+            >
               О нас
             </a>
-            <a href="#" className="text-black font-medium hover:text-rose-500 transition">
+            <a
+              href="#"
+              className="text-black font-medium hover:text-rose-500 transition"
+            >
               Контакты
             </a>
           </nav>
@@ -90,16 +99,18 @@ const Header = () => {
           <a
             href="#"
             onClick={closeMenu}
-            className="border border-black text-black px-6 py-3 rounded-full text-center font-semibold hover:bg-black hover:text-white transition"
+            className="flex items-center justify-center space-x-2 border border-black text-black px-6 py-3 rounded-full text-center font-semibold hover:bg-black hover:text-white transition"
           >
-            Войти
+            <LogIn size={20} />
+            <span>Войти</span>
           </a>
           <a
             href="#"
             onClick={closeMenu}
-            className="border border-black text-black px-6 py-3 rounded-full text-center font-semibold hover:bg-black hover:text-white transition"
+            className="flex items-center justify-center space-x-2 border border-black text-black px-6 py-3 rounded-full text-center font-semibold hover:bg-black hover:text-white transition"
           >
-            Зарегистрироваться
+            <UserPlus size={16} />
+            <span>Зарегистрироваться</span>
           </a>
         </nav>
       </div>

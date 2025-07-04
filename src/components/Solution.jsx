@@ -37,7 +37,7 @@ const Solution = () => {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-start mb-12">
           <div className="max-w-4xl">
-            <h2 className="text-3xl md:text-5xl mb-4 leading-[5]">
+            <h2 className="text-3xl md:text-5xl mb-4 ">
               Решение для покупки, торговли и инвестиций в цифровые активы
             </h2>
             <p className="text-2xl">
@@ -45,7 +45,7 @@ const Solution = () => {
               возможностях блокчейна, криптовалют и Web3
             </p>
           </div>
-          <div className="self-start">
+          <div className="self-start mt-6">
             <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">
               Присоединяйтесь к нашему сообществу в Discord
             </button>

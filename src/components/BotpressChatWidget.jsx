@@ -46,7 +46,7 @@ export default function BotpressChatWidget() {
         onClick={() => setIsOpen(!isOpen)}
         style={{
           position: "fixed",
-          bottom: isMobile ? 70 : 20,
+          bottom: isMobile ? 20 : 20,
           right: 12,
           zIndex: 9999,
           width: 50,

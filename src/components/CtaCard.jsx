@@ -3,7 +3,7 @@ import CtaImage from "@/assets/CtaImage.png";
 
 const CtaCard = () => {
   return (
-    <div className=" max-w-7xl mx-auto bg-gradient-to-r from-black via-[#430000] to-[#a60e1a] text-white rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div className="max-w-sm md:max-w-7xl mx-auto bg-gradient-to-r from-black via-[#430000] to-[#a60e1a] text-white rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-8">
       <div className="max-w-2xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Начните бесплатно
