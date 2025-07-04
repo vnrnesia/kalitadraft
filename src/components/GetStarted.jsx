@@ -23,7 +23,7 @@ const steps = [
 
 const GetStarted = () => {
   return (
-    <section className=" max-w-sm md:max-w-7xl mx-auto p py-16">
+    <section className="max-w-xs md:max-w-7xl mx-auto p py-16">
       {/* Header */}
       <div className="text-start mb-12">
         <h2 className="text-3xl md:text-6xl  mb-4">

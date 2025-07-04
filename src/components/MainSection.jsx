@@ -28,7 +28,7 @@ const MainSection = () => {
             <button className="bg-black text-white md:px-10 py-3 rounded-full hover:bg-rose-600 transition">
               🔐 Зарегистрироваться{" "}
             </button>
-            <button className="bg-black text-white px-10 py-3 rounded-full hover:bg-gray-800 transition">
+            <button className="bg-black text-white md:px-10 py-3 rounded-full hover:bg-gray-800 transition">
               📖 Как это работает?{" "}
             </button>
           </div>
