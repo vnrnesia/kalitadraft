@@ -16,7 +16,7 @@ const Footer = () => {
         {/* Логотип слева */}
         <div className="flex flex-col items-start">
           <div className="flex items-center space-x-2">
-            <img src={Logo} alt="Логотип Celchains" className="h-12 w-auto" />
+            <img src={Logo} alt="Логотип Celchains" className="h-[100px] w-auto" />
           </div>
         </div>
 

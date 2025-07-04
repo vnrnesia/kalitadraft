@@ -3,7 +3,8 @@ import icon1 from "@/assets/PlatformImg/icon1.png";
 import icon2 from "@/assets/PlatformImg/icon2.png";
 import icon3 from "@/assets/PlatformImg/icon3.png";
 import icon4 from "@/assets/PlatformImg/icon4.png";
-import { Check, X } from "lucide-react"; // lucide-react kurulmuş olmalı
+import { Check, X } from "lucide-react";
+import TradingViewChart from "@/components/TradingViewChart.jsx";
 
 const chains = [
   {
@@ -45,45 +46,69 @@ const Platform = () => {
     <div className="max-w-7xl mx-auto px-4 py-16">
       <div className="text-start mb-12">
         <h2 className="text-3xl md:text-6xl mb-4">
-          Следите за курсом и считайте доход за секунды{" "}
+          Следите за курсом и считайте доход за секунды
         </h2>
         <p className="text-2xl text-start max-w-6xl">
-          Онлайн-график золота и токена в реальном времени.Укажите количество
+          Онлайн-график золота и токена в реальном времени. Укажите количество
           токенов и узнайте, сколько вы можете заработать уже сегодня.
         </p>
       </div>
 
-      <div className="overflow-x-auto shadow-md rounded-xl">
-        <table className="w-full table-auto text-left border-collapse">
-          <thead>
-            <tr>
-              <th className="p-4 text-xl font-medium text-black">Chain</th>
-              <th className="p-4 text-xl font-medium text-black">Span</th>
-              <th className="p-4 text-xl font-medium text-black">Sell</th>
-              <th className="p-4 text-xl font-medium text-black">Buy</th>
-              <th className="p-4 text-xl font-medium text-black">Earn</th>
-            </tr>
-          </thead>
-          <tbody>
-            {chains.map((chain, index) => (
-              <tr key={index} className="hover:bg-gray-50">
-                <td className="flex items-center gap-5 p-6">
-                  <img src={chain.icon} alt={chain.name} className="w-14 h-14" />
-                  <span className="text-xl">{chain.name}</span>
-                </td>
-                {[chain.span, chain.sell, chain.buy, chain.earn].map((val, i) => (
-                  <td key={i} className="p-6">
-                    {val ? (
-                      <Check className="w-5 h-5 text-black" />
-                    ) : (
-                      <X className="w-5 h-5 text-black" />
-                    )}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
+      {/* Chart ve Calculator container */}
+      <div className="flex flex-col md:flex-row justify-between items-stretch gap-8">
+        <div
+          className="w-full md:w-2/3 rounded-3xl"
+          style={{ height: "70vh", maxHeight: "550px" }}
+        >
+          <TradingViewChart />
+        </div>
+
+        {/* Sağ: Calculator */}
+        <div className="w-full md:w-1/3 h-[550px]  pt-7 flex justify-center items-center">
+          <div className="bg-white p-8 rounded-xl shadow-md w-full h-full flex flex-col justify-between">
+            <h2 className="text-center text-lg font-medium mb-6">
+              Купить сейчас!
+            </h2>
+
+            <div className="flex gap-2 mb-4">
+              <select className="w-1/2 p-3 border rounded-xl">
+                <option>Купить</option>
+                <option>Продать</option>
+              </select>
+              <select className="w-1/2 p-3 border rounded-xl">
+                <option>Золото</option>
+              </select>
+            </div>
+
+            <div className="text-right text-xs text-gray-400 mb-2">
+              1 XAU ≈ $3,340.735USD
+            </div>
+
+            <div className="flex gap-2 mb-4">
+              <input
+                type="number"
+                placeholder="Amount"
+                className="w-2/3 p-3 border rounded-xl"
+              />
+              <select className="w-1/3 p-3 border rounded-xl">
+                <option>USD</option>
+                <option>EUR</option>
+              </select>
+            </div>
+
+            <div className="mb-6">
+              <select className="w-full p-3 border rounded-xl">
+                <option>All payment methods</option>
+                <option>Bank Transfer</option>
+                <option>PayPal</option>
+              </select>
+            </div>
+
+            <button className="w-full bg-[#ad0e21] text-white font-medium py-3 rounded-xl transition">
+              поиск предложений{" "}
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

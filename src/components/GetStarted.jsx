@@ -23,7 +23,7 @@ const steps = [
 
 const GetStarted = () => {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16">
+    <section className="max-w-7xl mx-auto p py-16">
       {/* Header */}
       <div className="text-start mb-12">
         <h2 className="text-3xl md:text-6xl  mb-4">
@@ -44,9 +44,13 @@ const GetStarted = () => {
               key={i}
               className="flex items-start gap-4 p-7 bg-white rounded-xl shadow border"
             >
-              <div className="w-20 h-16 border-2 border-black rounded-full flex items-center justify-center text-lg font-medium">
+              <div
+                className="border-2 border-black rounded-full flex items-center justify-center text-lg font-medium"
+                style={{ width: "64px", height: "64px", minWidth: "64px" }}
+              >
                 {step.number}
               </div>
+
               <div>
                 <h3 className="text-xl font-semibold mb-1">{step.title}</h3>
                 <p className="text-black">{step.description}</p>

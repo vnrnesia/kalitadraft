@@ -3,14 +3,14 @@ import WalletImage from "@/assets/homeimage.png";
 
 const MainSection = () => {
   return (
-    <section className="w-full bg-white  pt-6 pb-12">
+    <section className="w-full bg-white pt-12 md:pt-6 pb-12">
       <div className="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Sol Metin Kısmı */}
         <div className="text-center md:text-left max-w-xl">
-          <h1 className="text-4xl md:text-7xl text-black leading-tight flex flex-row flex-wrap gap-2">
+          <h1 className="text-4xl md:text-7xl text-black leading-tight">
             Инвестируй в{" "}
             <span className="inline-block px-4 py-1 border border-rose-500 rounded-full">
-              цифровое{" "}
+              цифровое
             </span>{" "}
             золото Получай доход каждый{" "}
             <span className="inline-block px-4 py-1 border border-rose-500 rounded-full">
@@ -25,7 +25,7 @@ const MainSection = () => {
 
           {/* Butonlar */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <button className="bg-black text-white px-10 py-3 rounded-full hover:bg-rose-600 transition">
+            <button className="bg-black text-white md:px-10 py-3 rounded-full hover:bg-rose-600 transition">
               🔐 Зарегистрироваться{" "}
             </button>
             <button className="bg-black text-white px-10 py-3 rounded-full hover:bg-gray-800 transition">

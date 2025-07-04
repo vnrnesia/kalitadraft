@@ -9,6 +9,7 @@ import Solution from "@/components/Solution.jsx";
 import CtaCard from "@/components/CtaCard.jsx";
 import News from "@/components/News.jsx";
 import Footer from "@/components/Footer.jsx";
+import BotpressChatWidget from "@/components/BotpressChatWidget.jsx";
 
 import "./App.css";
 
@@ -30,6 +31,7 @@ function App() {
       <CtaCard />
         <Footer />
       </div>
+      <BotpressChatWidget/>
     </>
   );
 }

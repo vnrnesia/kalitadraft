@@ -1,36 +1,21 @@
 import { Star } from "lucide-react"; 
+import image1 from "@/assets/BrandsImg/image1.png";
+import image2 from "@/assets/BrandsImg/image2.png";
+import image3 from "@/assets/BrandsImg/image3.png";
+import image4 from "@/assets/BrandsImg/image4.png";
+import image5 from "@/assets/BrandsImg/image5.png";
+import image6 from "@/assets/BrandsImg/image6.png";
 
 const MainSectionBottom = () => {
   return (
-    <section className="bg-gray-100 py-16 ">
-      <div className="max-w-7xl mx-auto  grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        {/* 1. Kutu */}
-        <div>
-          <p className="text-black text-2xl mb-3">Trusted by</p>
-          <h3 className="text-rose-700 text-2xl font-semibold">15M+ Users</h3>
-        </div>
-
-        {/* 2. Kutu */}
-        <div>
-          <p className="text-black text-2xl mb-3 ">Globally</p>
-          <h3 className="text-rose-700 text-2xl font-semibold">Audited</h3>
-        </div>
-
-        {/* 3. Kutu - Yıldızlı */}
-        <div>
-          <p className="text-black text-2xl  mb-4">Top reviews</p>
-          <div className="flex justify-center text-2xl gap-2 text-rose-700">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} size={20} fill="currentColor" stroke="currentColor" />
-            ))}
-          </div>
-        </div>
-
-        {/* 4. Kutu */}
-        <div>
-          <p className="text-black text-2xl mb-3 ">Founded in</p>
-          <h3 className="text-rose-700 text-2xl font-semibold">2018</h3>
-        </div>
+    <section className="bg-gray-100 py-16">
+      <div className="container mx-auto flex flex-wrap justify-center items-center gap-12">
+        <img src={image1} alt="Brand 1" className="h-6 object-contain" />
+        <img src={image2} alt="Brand 2" className="h-12 object-contain" />
+        <img src={image3} alt="Brand 3" className="h-8 object-contain" />
+        <img src={image4} alt="Brand 4" className="h-10 object-contain" />
+        <img src={image5} alt="Brand 5" className="h-12 object-contain" />
+        <img src={image6} alt="Brand 6" className="h-10 object-contain" />
       </div>
     </section>
   );
