@@ -16,22 +16,27 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="max-w-[60vw] mt-24 mx-auto ">
+      <div className=" mt-24 mx-auto ">
         <Header />
         <MainSection />
       </div>
       <MainSectionBottom />
       <CtaSection />
-      <Platform />
-      <GetStarted />
+      
+      
+      <div className="md:max-w-6xl 2xl:max-w-7xl  mx-auto ">
+        <Platform />
+        <GetStarted />
+        
+      </div>
       <Solution />
-     
-      <div className="max-w-7xl  mx-auto ">
-         <News />
-      <CtaCard />
+
+      <div className="md:max-w-6xl 2xl:max-w-7xl  mx-auto ">
+        <News />
+        <CtaCard />
         <Footer />
       </div>
-      <BotpressChatWidget/>
+      <BotpressChatWidget />
     </>
   );
 }
